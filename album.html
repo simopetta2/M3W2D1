@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .container {
+            color: white;
+        }
+
+        body {
+            background-color: black;
+
+        }
+
+        .img {
+            min-width: 100px;
+            max-width: 100px;
+            padding-top: 10px;
+        }
+
+        .img-container {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img-container col-12">
+            <h1>Album di Simone</h1>
+            <img class="img pb-4" src="assets/unnamed.jpg" alt="img-logo">
+        </div>
+        <nav class="navbar bg-body-tertiary navbar-expand-lg navbar-expand-md mb-3 bg-dark border-bottom "
+            data-bs-theme="dark">
+            <div class="container-fluid">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Seleziona Genere</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">House</a></li>
+                            <li><a class="dropdown-item" href="#">reggaeton </a></li>
+                            <li><a class="dropdown-item" href="#">Classic</a></li>
+                            <li>
+                                <hr><a class="dropdown-item" href="#">Tutti i generi</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca canzone..." aria-label="Cerca" />
+                    <button class="btn btn-dark" type="submit">Cerca</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="row g-4 pb">
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="card" data-bs-theme="dark">
+                    <img src="assets/lettera-s-sc2p8dkjs50jvtdt.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5>Ain't Letting You Down</h5>
+                        <p>Martin Garrix,Saksham,Quinn</p>
+                        <p>House</p>
+                        <p>4:01 min</p>
+                        <a href="https://www.youtube.com/watch?v=xORx95U1RSg&list=RDxORx95U1RSg&start_radio=1&pp=ygUkYWluJ3QgbGV0dGluZyB5b3UgZG93biBtYXJ0aW4gZ2Fycml4oAcB"
+                            class="btn btn-light align-self-end">Ascolta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="card" data-bs-theme="dark">
+                    <img src="assets/71g5iX5gbxL._UF1000,1000_QL80_.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5>Give Me Everything</h5>
+                        <p>Pitbull,Ne-Yo,Afrojack,and Nayer</p>
+                        <p>Club-pop</p>
+                        <p>4:27 min</p>
+                        <a href="https://www.youtube.com/watch?v=EPo5wWmKEaI&list=RDEPo5wWmKEaI&start_radio=1&pp=ygUacGl0YnVsbCBnaXZlIG1lIGV2ZXJ5dGhpbmegBwE%3D"
+                            class="btn btn-light align-self-end">Ascolta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="card" data-bs-theme="dark">
+                    <img src="assets/81quKaTYbML._UF1000,1000_QL80_.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5>Memories</h5>
+                        <p>David Guetta</p>
+                        <p>House</p>
+                        <p>3:29 min</p>
+                        <a href="https://youtu.be/NUVCQXMUVnI?list=RDNUVCQXMUVnI"
+                            class="btn btn-light align-self-end">Ascolta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="card" data-bs-theme="dark">
+                    <img src="assets/ab67616d0000b2735694163d7c4ab48251e9b57c.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5>Closer</h5>
+                        <p>Ne-Yo</p>
+                        <p>R&B/soul</p>
+                        <p>3:55 min</p>
+                        <a href="https://www.youtube.com/watch?v=z_aC5xPQ2f4&list=RDz_aC5xPQ2f4&start_radio=1&pp=ygUGY2xvc2VyoAcB"
+                            class="btn btn-light align-self-end">Ascolta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="card" data-bs-theme="dark">
+                    <img src="assets/artworks-000080654104-hw235l-t500x500.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5>Travesuras</h5>
+                        <p>Nicky Jam</p>
+                        <p>reggaeton </p>
+                        <p>4:35 min</p>
+                        <a href="https://www.youtube.com/watch?v=OxxggwHFj7M&list=RDOxxggwHFj7M&start_radio=1&pp=ygUKdHJhdmVzdXJhc6AHAQ%3D%3D"
+                            class="btn btn-light align-self-end">Ascolta</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="card" data-bs-theme="dark">
+                    <img src="assets/Levelssong.jpg" class="card-img-top" alt="">
+                    <div class="card-body d-flex flex-column">
+                        <h5>Levels</h5>
+                        <p>Avicii</p>
+                        <p>Progressive house </p>
+                        <p>3:19 min</p>
+                        <a href="https://www.youtube.com/watch?v=_ovdm2yX4MA&list=RD_ovdm2yX4MA&start_radio=1&pp=ygUNbGV2ZWxzIGF2aWNpaaAHAQ%3D%3D"
+                            class="btn btn-light align-self-end">Ascolta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
